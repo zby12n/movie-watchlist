@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Movie WatchList</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="un-selectable">Find your movie</h1>
+        <nav>
+            <a class="go-to-watchlist un-selectable" href="watchList.html">WatchList</a>
+        </nav>
+    </header>
+
+    <form id="search">
+        <label for="title-input">
+            <input class="search-input" required id="title-input" type="text" placeholder="Title">
+        </label>
+        <label for="year-input">
+            <input class="search-input" id="year-input" type="text" placeholder="Year">
+        </label>
+
+        <button class="un-selectable" id="submit">search</button>
+    </form>
+
+    <main id="results">
+        <div class="placeholder un-selectable">
+            <img src="img/hold-in.svg" alt="">
+            <p>Start exploring</p>
+        </div>
+    </main>
+
+    <div hidden id="page-nav" class="page-nav-container"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
